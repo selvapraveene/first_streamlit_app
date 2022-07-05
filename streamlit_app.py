@@ -1,6 +1,6 @@
 import streamlit
-import emoji
 
+print("\UOOOO1f6OO")
 streamlit.title('My Parents New Healthy Dinner')
 streamlit.header('Breakfast Favorites')
 streamlit.text('Omega 3 & Blueberry Oatmeal')
