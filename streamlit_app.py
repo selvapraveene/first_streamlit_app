@@ -57,8 +57,9 @@ streamlit.write('The user entered ', add_fruit)
 
 add_fruit_response = requests.get("https://fruityvice.com/api/fruit/"+add_fruit)
 #streamlit.text(add_fruit_response.json()) # writes data to the screen
-
+my_cur.execute("INSERT INTO FRUIT_LOAD_LIST VALUES ('From Streamlit')")
 
 fruit_normalized = pandas.json_normalize(add_fruit_response.json())
 # draws a table for the results
 streamlit.dataframe(fruit_normalized)
+
