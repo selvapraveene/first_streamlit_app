@@ -66,6 +66,7 @@ if streamlit.button('Get Fruit Load List'):
 add_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit')
 streamlit.write('The user entered ', add_fruit)
 
+streamlit.stop()
 
 add_fruit_response = requests.get("https://fruityvice.com/api/fruit/"+add_fruit)
 #streamlit.text(add_fruit_response.json()) # writes data to the screen
